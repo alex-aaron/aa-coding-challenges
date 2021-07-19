@@ -1,15 +1,20 @@
 ///////////// Longest Palindromic Substring /////////////
 
-let sampleStr = "babad";
+let sampleStr = "a";
 
 function longestPalindrome(s) {
-    let palArray = createPalindromeArr(s);
+    let longestPal;
+    if (s.length === 1) {
+        longestPal = s;
+    } else {
+        let palArray = createPalindromeArr(s);
     let length = palArray[0].length;
     let longestPal = palArray[0];
     for (const element of palArray) {
         if (element.length > length) {
             longestPal = element;
         }
+    }
     }
     return longestPal;
 }
