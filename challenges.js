@@ -1,1 +1,9 @@
-console.log(1 + 1);
+// Longest Palindromic Substring //
+
+let sampleStr = "babad";
+
+function longestPalindrome(s) {
+    return sampleStr;
+}
+
+console.log(longestPalindrome(smapleStr));
