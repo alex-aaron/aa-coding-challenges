@@ -1,13 +1,38 @@
-let sampleInt = 121;
+let sampleInt = 3;
 
-function isPalindrome(x) {
-    let reversedStr = x.toString().split("").reverse().join("");
-    let reversedInt = parseInt(reversedStr);
-    if (x === reversedInt) {
-        return true;
-    } else {
-        return false;
-    }
+function intToRoman(num) {
+    return sampleInt;
 }
 
-console.log(isPalindrome(sampleInt));
+////// HELPER FUNCTIONS ////////
+
+function singleDigitIntToRoman(x) {
+    let letter = "";
+    let romanNumArr = [];
+    let count;
+    let romanNum;
+    if (x < 5) {
+        let count = x;
+        while (count > 0) {
+            letter += "I";
+            romanNumArr.push(romanNum);
+            count--;
+        }
+    }
+    romanNum = romanNumArr.join("");
+    return romanNum;
+}
+
+function doubleDigitIntToRoman(x) {
+
+}
+
+function tripleDigitIntToRoman(x) {
+
+}
+
+function quadrupleDigitIntToRoman(x) {
+
+}
+
+console.log(singleDigitIntToRoman(sampleInt));
