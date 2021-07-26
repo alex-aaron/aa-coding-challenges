@@ -1,13 +1,9 @@
-let sampleArr = [true, false, false, true, false];
+let sampleStr = ["flow", "flower", "flight"];
 
-function countTrue(arr) {
-    let trueSum = 0;
-    for (const element of arr) {
-        if (element === true) {
-            trueSum += 1;
-        }
-    }
-    return trueSum;
+function longestCommonPrefix(arr) {
+    let minPrefix = false;
+    let comparisonStr = arr[0];
+    
 }
 
-console.log(countTrue(sampleArr));
+console.log(longestCommonPrefix(sampleStr));
