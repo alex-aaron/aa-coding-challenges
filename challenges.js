@@ -1,4 +1,8 @@
 
-function derivative(b, m) {
-    return Math.pow(b, m);
+let sampleInput = ;
+
+function getLength(a) {
+    return a;
 }
+
+console.log(getLength(sampleInput));
