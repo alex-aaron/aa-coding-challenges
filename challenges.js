@@ -9,6 +9,13 @@ function longestSubarraySum(a) {
         currentMax = Math.max(a[i], currentMax + a[i]);
         maxSumsArr.push(currentMax);
     }
+    let maxSum = maxSumsArr[0];
+    for (const element of maxSumsArr) {
+        if (element > maxSum) {
+            maxSum = element;
+        }
+    }
+    return maxSum;
 }
 
 console.log(longestSubarraySum(a));
