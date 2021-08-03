@@ -5,6 +5,10 @@ function longestSubarraySum(a) {
     let currentMax = a[0];
     let maxSumsArr = [];
     maxSumsArr.push(currentMax);
+    for (let i = 1; i < a.length; i++) {
+        currentMax = Math.max(a[i], currentMax + a[i]);
+        maxSumsArr.push(currentMax);
+    }
 }
 
 console.log(longestSubarraySum(a));
