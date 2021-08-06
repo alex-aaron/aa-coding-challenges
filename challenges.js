@@ -4,7 +4,7 @@ let sampleArr = [1, 2, 3, 4, 5];
 
 console.log("Vanilla JS below:")
 
-for (var i = 0; i < sampleArray.length; i++) {
+for (var i = 0; i < sampleArr.length; i++) {
     console.log(sampleArr[i]);
 }
 
